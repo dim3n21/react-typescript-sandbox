@@ -1,0 +1,10 @@
+.episode-layout {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100vh;
+}
+
+.episode-box {
+    width: 15rem;
+    margin: 1rem;
+}

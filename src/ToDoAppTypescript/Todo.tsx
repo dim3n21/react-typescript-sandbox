@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Form from "./sandbox/Form";
-import Button from "./sandbox/Btn/Btn";
+import Form from "../sandbox/Form";
+import Button from "../sandbox/Btn/Btn";
 
 type FormElem = React.FormEvent<HTMLFormElement>;
 
@@ -9,11 +9,11 @@ interface ITodo {
   complete: boolean;
 }
 
-interface ITodo2 extends ITodo {
+interface ITodo2 extends ITodo { // example of extending interface
   somethingElse: string;
 }
 
-const App: React.FC = () => {
+const Todo: React.FC = () => {
   const [value, setValue] = useState<string>("");
   const [todos, setTodos] = useState<ITodo[]>([]);
 
@@ -68,4 +68,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Todo;

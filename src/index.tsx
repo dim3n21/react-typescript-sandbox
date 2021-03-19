@@ -1,10 +1,15 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Todo from './ToDoAppTypescript/Todo';
+import RickAndMorty from './RickAndMorty/RickAndMorty';
+import { StoreProvider } from './RickAndMorty/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StoreProvider>
+      <RickAndMorty />
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
